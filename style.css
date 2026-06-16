@@ -177,7 +177,7 @@
 
 .hidden { display: none !important; }
 
-/* ─── RESET ───────────────────────────────────────────────────────────────── */
+/* ─── RESET ──────────────────────────────────────────────────────────────── */
 
 *,
 *::before,
@@ -246,13 +246,13 @@ button {
     font-family: inherit;
 }
 
-/* ─── SCROLLBAR ───────────────────────────────────────────────────────────── */
+/* ─── SCROLLBAR ──────────────────────────────────────────────────────────── */
 
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--surface); border-radius: var(--radius-full); }
 ::-webkit-scrollbar-thumb { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: var(--radius-full); }
 
-/* ─── LAYOUT ──────────────────────────────────────────────────────────────── */
+/* ─── LAYOUT ─────────────────────────────────────────────────────────────── */
 
 .container {
     display: flex;
@@ -265,7 +265,7 @@ button {
     padding: 34px;
 }
 
-/* ─── SIDEBAR ─────────────────────────────────────────────────────────────── */
+/* ─── SIDEBAR ────────────────────────────────────────────────────────────── */
 
 .sidebar {
     position: sticky;
@@ -484,7 +484,7 @@ button {
     -webkit-text-fill-color: transparent;
 }
 
-/* ─── MAIN & PAGES ────────────────────────────────────────────────────────── */
+/* ─── MAIN & PAGES ───────────────────────────────────────────────────────── */
 
 .main {
     display: flex;
@@ -520,7 +520,7 @@ button {
     transition: background var(--transition-base), border-color var(--transition-base);
 }
 
-/* ─── HERO ────────────────────────────────────────────────────────────────── */
+/* ─── HERO ───────────────────────────────────────────────────────────────── */
 
 .hero {
     position: relative;
@@ -697,7 +697,7 @@ button {
     transform: translateY(-2px);
 }
 
-/* ─── STATS ───────────────────────────────────────────────────────────────── */
+/* ─── STATS ──────────────────────────────────────────────────────────────── */
 
 .stats-section { padding: 24px 30px; }
 
@@ -768,7 +768,7 @@ button {
     font-weight: 500;
 }
 
-/* ─── SECTION COMMON ──────────────────────────────────────────────────────── */
+/* ─── SECTION COMMON ─────────────────────────────────────────────────────── */
 
 .section { padding: 30px; }
 
@@ -802,7 +802,7 @@ button {
 
 .section-link:hover { opacity: 0.75; }
 
-/* ─── HOME — FEATURED SERVICES ────────────────────────────────────────────── */
+/* ─── HOME — FEATURED SERVICES ───────────────────────────────────────────── */
 
 .home-services-grid {
     display: grid;
@@ -863,7 +863,7 @@ button {
     line-height: 1.6;
 }
 
-/* ─── HOME — FEATURED PROJECTS ────────────────────────────────────────────── */
+/* ─── HOME — FEATURED PROJECTS ───────────────────────────────────────────── */
 
 .home-projects-grid {
     display: flex;
@@ -964,7 +964,7 @@ button {
     transform: translate(3px, -3px);
 }
 
-/* ─── HOME — CTA STRIP ────────────────────────────────────────────────────── */
+/* ─── HOME — CTA STRIP ───────────────────────────────────────────────────── */
 
 .cta-strip {
     background: linear-gradient(135deg,
@@ -1042,7 +1042,7 @@ button {
     transform: translateY(-2px);
 }
 
-/* ─── SERVICES — SERVICE CARDS ────────────────────────────────────────────── */
+/* ─── SERVICES — SERVICE CARDS ───────────────────────────────────────────── */
 
 .services-grid {
     display: grid;
@@ -1127,7 +1127,7 @@ button {
     border-radius: 50%;
 }
 
-/* ─── WORKFLOW ────────────────────────────────────────────────────────────── */
+/* ─── WORKFLOW ───────────────────────────────────────────────────────────── */
 
 .workflow-track {
     position: relative;
@@ -1218,7 +1218,7 @@ button {
     line-height: 1.65;
 }
 
-/* ─── AI SECTION ──────────────────────────────────────────────────────────── */
+/* ─── AI SECTION ─────────────────────────────────────────────────────────── */
 
 .ai-section {
     position: relative;
@@ -1345,7 +1345,7 @@ button {
     transform: rotate(var(--angle)) translateX(calc(95px - 16px)) rotate(calc(-1 * var(--angle)));
 }
 
-/* ─── TECH STACK ──────────────────────────────────────────────────────────── */
+/* ─── TECH STACK ─────────────────────────────────────────────────────────── */
 
 .techstack-grid {
     display: grid;
@@ -1420,7 +1420,7 @@ button {
     color: white;
 }
 
-/* ─── ABOUT — BIO BLOCK ───────────────────────────────────────────────────── */
+/* ─── ABOUT — BIO BLOCK ──────────────────────────────────────────────────── */
 
 .about-bio-block {
     display: grid;
@@ -1493,7 +1493,7 @@ button {
     font-weight: 600;
 }
 
-/* ─── ABOUT — EXPERIENCE TIMELINE ────────────────────────────────────────── */
+/* ─── ABOUT — EXPERIENCE TIMELINE ───────────────────────────────────────── */
 
 .experience-timeline {
     position: relative;
@@ -1599,7 +1599,7 @@ button {
     line-height: 1.6;
 }
 
-/* ─── ABOUT — EDUCATION ───────────────────────────────────────────────────── */
+/* ─── ABOUT — EDUCATION ──────────────────────────────────────────────────── */
 
 .education-list {
     display: flex;
@@ -1673,7 +1673,7 @@ button {
     line-height: 1.6;
 }
 
-/* ─── ABOUT — ACHIEVEMENTS ────────────────────────────────────────────────── */
+/* ─── ABOUT — ACHIEVEMENTS ───────────────────────────────────────────────── */
 
 .achievements-grid {
     display: grid;
@@ -1714,7 +1714,7 @@ button {
     font-size: 14px;
 }
 
-/* ─── ABOUT — MILESTONES ──────────────────────────────────────────────────── */
+/* ─── ABOUT — MILESTONES ─────────────────────────────────────────────────── */
 
 .milestones-list {
     position: relative;
@@ -1785,7 +1785,7 @@ button {
     line-height: 1.65;
 }
 
-/* ─── PROJECTS PAGE ───────────────────────────────────────────────────────── */
+/* ─── PROJECTS PAGE ──────────────────────────────────────────────────────── */
 
 .projects-grid {
     display: grid;
@@ -1898,7 +1898,7 @@ button {
 
 .project-detail-btn:hover .ri-arrow-right-line { transform: translateX(3px); }
 
-/* ─── PROJECT DETAIL VIEW ─────────────────────────────────────────────────── */
+/* ─── PROJECT DETAIL VIEW ────────────────────────────────────────────────── */
 
 .project-detail-view {
     display: none;
@@ -2087,7 +2087,7 @@ button {
     transition: color 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
 }
 
-/* ─── LIGHTBOX ────────────────────────────────────────────────────────────── */
+/* ─── LIGHTBOX ───────────────────────────────────────────────────────────── */
 
 .project-lightbox {
     position: fixed;
@@ -2133,7 +2133,7 @@ button {
     cursor: pointer;
 }
 
-/* ─── PROJECT DETAIL LINKS ────────────────────────────────────────────────── */
+/* ─── PROJECT DETAIL LINKS ───────────────────────────────────────────────── */
 
 .project-detail-links { display: flex; gap: 14px; }
 
@@ -2170,7 +2170,7 @@ button {
     box-shadow: none;
 }
 
-/* ─── CONTACT PAGE ────────────────────────────────────────────────────────── */
+/* ─── CONTACT PAGE ───────────────────────────────────────────────────────── */
 
 .contact-wrapper {
     display: grid;
@@ -2213,6 +2213,21 @@ button {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.2);
+}
+
+.form-status--success {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.form-status--error {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
 }
 
 .submit-btn {
@@ -2304,7 +2319,7 @@ button {
     color: white;
 }
 
-/* ─── MOBILE NAVBAR ───────────────────────────────────────────────────────── */
+/* ─── MOBILE NAVBAR ──────────────────────────────────────────────────────── */
 
 .mobile-navbar {
     display: none;
@@ -2445,7 +2460,7 @@ button {
 .burger-btn.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .burger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ─── NAV OVERLAY ─────────────────────────────────────────────────────────── */
+/* ─── NAV OVERLAY ────────────────────────────────────────────────────────── */
 
 .nav-overlay {
     display: none;
@@ -2532,7 +2547,7 @@ button {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ─── ACCESSIBILITY ───────────────────────────────────────────────────────── */
+/* ─── ACCESSIBILITY ──────────────────────────────────────────────────────── */
 
 button:focus-visible,
 a:focus-visible,
@@ -2542,7 +2557,7 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
-/* ─── RESPONSIVE — 1024px ─────────────────────────────────────────────────── */
+/* ─── RESPONSIVE — 1024px ────────────────────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .mobile-navbar { display: flex; }
@@ -2590,7 +2605,7 @@ textarea:focus-visible {
     }
 }
 
-/* ─── RESPONSIVE — 768px ──────────────────────────────────────────────────── */
+/* ─── RESPONSIVE — 768px ─────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
     .mobile-navbar { height: 58px; padding: 0 16px; }
@@ -2669,7 +2684,7 @@ textarea:focus-visible {
     .exp-timeline-header { flex-direction: column; gap: 6px; }
 }
 
-/* ─── RESPONSIVE — 576px ──────────────────────────────────────────────────── */
+/* ─── RESPONSIVE — 576px ─────────────────────────────────────────────────── */
 
 @media (max-width: 576px) {
     .container { padding: 10px; gap: 10px; }
@@ -2735,7 +2750,7 @@ textarea:focus-visible {
     .exp-timeline-body { padding: 14px; }
 }
 
-/* ─── RESPONSIVE — 1920px+ ────────────────────────────────────────────────── */
+/* ─── RESPONSIVE — 1920px+ ───────────────────────────────────────────────── */
 
 @media (min-width: 1920px) {
     .container { max-width: 1800px; padding: 48px; gap: 48px; }
@@ -2743,7 +2758,7 @@ textarea:focus-visible {
     .section-title { font-size: 42px; }
 }
 
-/* ─── REDUCED MOTION ──────────────────────────────────────────────────────── */
+/* ─── REDUCED MOTION ─────────────────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
     *,

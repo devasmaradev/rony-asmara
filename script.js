@@ -71,11 +71,8 @@ function navigateToPage(pageId) {
 
     sessionStorage.setItem("activePage", pageId);
 
-    // Reset project detail state setiap kali navigasi ke halaman projects
     if (pageId === "projects") {
-        document.querySelectorAll(".project-detail-view.active").forEach(el => {
-            el.classList.remove("active");
-        });
+        document.querySelectorAll(".project-detail-view.active").forEach(el => el.classList.remove("active"));
         document.querySelectorAll("#projects .section").forEach(s => {
             s.classList.remove("hidden");
             s.querySelectorAll(".projects-grid, .section-title, .section-desc").forEach(el => {
@@ -501,6 +498,8 @@ const translations = {
         form_email: "Email Address",
         form_message: "Message",
         form_send: "Send Message",
+        form_subject: "Subject",
+        form_subject_placeholder: "What's this about?",
         form_name_placeholder: "Amanda Gabriella",
         form_email_placeholder: "hello@example.com",
         form_message_placeholder: "Your message here...",
@@ -714,6 +713,8 @@ const translations = {
         form_email: "Alamat Email",
         form_message: "Pesan",
         form_send: "Kirim Pesan",
+        form_subject: "Subjek",
+        form_subject_placeholder: "Tentang apa ini?",
         form_name_placeholder: "Rania Kurnia Dewi",
         form_email_placeholder: "halo@contoh.com",
         form_message_placeholder: "Pesan kamu di sini...",
@@ -949,45 +950,65 @@ function initAnimations() {
 
 // ─── CONTACT FORM ──────────────────────────────────────────────────────────
 
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
+function initContactForm() {
+    const form = document.getElementById("contact-form");
+    const statusEl = document.getElementById("form-status");
+    if (!form || !statusEl) return;
 
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    submitBtn.disabled = true;
+    form.addEventListener("submit", async e => {
+        e.preventDefault();
 
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
-    };
+        const submitBtn = form.querySelector(".submit-btn");
+        const originalText = submitBtn.textContent;
 
-    try {
-        const response = await fetch(
-            'https://formspree.io/f/xwvjzblg',
-            {
-                method: 'POST',
+        submitBtn.innerHTML = '<i class="ri-loader-4-line" style="animation:spin 0.8s linear infinite;display:inline-block;"></i> Sending...';
+        submitBtn.disabled = true;
+        statusEl.textContent = "";
+        statusEl.className = "";
+
+        const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+        };
+
+        try {
+            const response = await fetch("https://formspree.io/f/xwvjzblg", {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify(formData),
+            });
+
+            const lang = localStorage.getItem("lang") || "en";
+            if (response.ok) {
+                statusEl.textContent = lang === "id"
+                    ? "Pesan berhasil dikirim! Saya akan segera menghubungi kamu."
+                    : "Message sent successfully! I'll get back to you soon.";
+                statusEl.className = "form-status--success";
+                form.reset();
+                document.getElementById("subject").value = "";
+            } else {
+                statusEl.textContent = lang === "id"
+                    ? "Gagal mengirim pesan. Silakan coba lagi."
+                    : "Failed to send message. Please try again.";
+                statusEl.className = "form-status--error";
             }
-        );
-
-        if (response.ok) {
-            this.showNotification('Message sent successfully!', 'success');
-            contactForm.reset();
-        } else {
-            this.showNotification('Failed to send message.', 'error');
+        } catch {
+            const lang = localStorage.getItem("lang") || "en";
+            statusEl.textContent = lang === "id"
+                ? "Terjadi kesalahan. Periksa koneksi internetmu."
+                : "Something went wrong. Check your internet connection.";
+            statusEl.className = "form-status--error";
         }
-    } catch (error) {
-        this.showNotification('Failed to send message.', 'error');
-    }
 
-    submitBtn.innerHTML = originalText;
-    submitBtn.disabled = false;
-});
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+    });
+}
 
 // ─── BURGER MENU ───────────────────────────────────────────────────────────
 
@@ -1079,12 +1100,8 @@ function openProjectDetail(projectId) {
     const parentSection = target.closest(".section");
     if (!parentSection) return;
 
-    // Tutup semua detail view yang mungkin masih active
-    document.querySelectorAll(".project-detail-view.active").forEach(el => {
-        el.classList.remove("active");
-    });
+    document.querySelectorAll(".project-detail-view.active").forEach(el => el.classList.remove("active"));
 
-    // Restore semua section dan elemen yang mungkin tersembunyi
     document.querySelectorAll("#projects .section").forEach(s => {
         s.classList.remove("hidden");
         s.querySelectorAll(".projects-grid, .section-title, .section-desc").forEach(el => {
@@ -1092,7 +1109,6 @@ function openProjectDetail(projectId) {
         });
     });
 
-    // Baru sembunyikan yang perlu disembunyikan
     parentSection.querySelectorAll(".projects-grid, .section-title, .section-desc").forEach(el => {
         el.classList.add("hidden");
     });
