@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Rony Asmara - Technical Support & Helpdesk Specialist. Portfolio showcasing professional experience in IT support, system operations, and web development.">
+    <meta name="author" content="Rony Asmara">
+    <meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f0f4ff" media="(prefers-color-scheme: light)">
+    <title>Rony —</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- MOBILE NAVBAR -->
+        <header class="mobile-navbar" id="mobileNavbar" aria-label="Mobile Navigation Bar">
+            <div class="mobile-navbar__profile">
+                <div class="mobile-navbar__avatar">
+                    <img src="pp.png" alt="Rony Asmara" width="36" height="36" loading="lazy" decoding="async">
+                </div>
+                <span class="mobile-navbar__name">Rony Asmara</span>
+            </div>
+            <div class="mobile-navbar__controls">
+                <button class="mobile-navbar__lang-btn" id="mobileLangBtn" type="button" aria-label="Toggle Language">
+                    <span id="mobileLangLabel">EN</span>
+                </button>
+                <button class="mobile-navbar__theme-btn" id="mobileThemeBtn" type="button" aria-label="Toggle Dark/Light Mode">
+                    <i class="ri-moon-fill"></i>
+                </button>
+                <button class="burger-btn" id="burgerBtn" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- MOBILE FULLSCREEN OVERLAY NAV -->
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+            <nav class="nav-overlay__menu" aria-label="Fullscreen Navigation">
+                <a href="#" class="nav-overlay__link nav-link" data-page="home">
+                    <i class="ri-home-5-line"></i>
+                    <span data-i18n="nav_home">Home</span>
+                </a>
+                <a href="#" class="nav-overlay__link nav-link" data-page="about">
+                    <i class="ri-user-line"></i>
+                    <span data-i18n="nav_about">About</span>
+                </a>
+                <a href="#" class="nav-overlay__link nav-link" data-page="services">
+                    <i class="ri-service-line"></i>
+                    <span data-i18n="nav_services">Services</span>
+                </a>
+                <a href="#" class="nav-overlay__link nav-link" data-page="projects">
+                    <i class="ri-briefcase-line"></i>
+                    <span data-i18n="nav_projects">Projects</span>
+                </a>
+                <a href="#" class="nav-overlay__link nav-link" data-page="contact">
+                    <i class="ri-mail-line"></i>
+                    <span data-i18n="nav_contact">Contact</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar" aria-label="Profile and Navigation Sidebar">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="pp.png" alt="Rony Asmara's profile picture" width="108" height="108" loading="lazy" decoding="async">
+                </div>
+                <h1>Rony Asmara</h1>
+                <p data-i18n="profile_role">Technical Support Specialist</p>
+            </div>
+
+            <div class="top-switch">
+                <div class="lang" aria-label="Language Switcher" role="group">
+                    <button class="active" data-lang="en" type="button" aria-label="Switch to English">EN</button>
+                    <button data-lang="id" type="button" aria-label="Switch to Indonesian">ID</button>
+                </div>
+                <button class="theme-btn" type="button" aria-label="Toggle Dark/Light Mode">
+                    <i class="ri-moon-fill"></i>
+                </button>
+            </div>
+
+            <nav class="menu" aria-label="Main Navigation">
+                <a href="#" class="nav-link active" data-page="home">
+                    <span><i class="ri-home-5-line"></i><span data-i18n="nav_home">Home</span></span>
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="nav-link" data-page="about">
+                    <span><i class="ri-user-line"></i><span data-i18n="nav_about">About</span></span>
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="nav-link" data-page="services">
+                    <span><i class="ri-service-line"></i><span data-i18n="nav_services">Services</span></span>
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="nav-link" data-page="projects">
+                    <span><i class="ri-folder-3-line"></i><span data-i18n="nav_projects">Projects</span></span>
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="nav-link" data-page="contact">
+                    <span><i class="ri-mail-line"></i><span data-i18n="nav_contact">Contact</span></span>
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+            </nav>
+
+            <footer class="sidebar-footer">
+                <div class="sidebar-footer__line"></div>
+                <div class="sidebar-footer__content">
+                    <span class="sidebar-footer__copy">
+                        <span data-i18n="footer_made">Made with</span>
+                        <i class="ri-cup-line"></i>
+                        <span data-i18n="footer_by">by</span>
+                        <strong class="sidebar-footer__name">Rony Asmara</strong>
+                    </span>
+                </div>
+            </footer>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <!-- PAGE: HOME -->
+            <section class="page active" id="home">
+
+                <!-- HERO -->
+                <section class="hero">
+                    <div class="hero-body">
+                        <h1>
+                            <span data-i18n="hero_greeting">Hi,</span><br>
+                            <span data-i18n="hero_im">I'm</span> <span class="hero-name">Rony*</span>
+                        </h1>
+                        <div class="hero-meta">
+                            <div><i class="ri-map-pin-line"></i><span class="meta-text" data-i18n="hero_location">South Jakarta, Indonesia</span></div>
+                            <div><i class="ri-customer-service-line"></i><span class="meta-text" data-i18n="position_1">Technical Support Specialist</span></div>
+                            <div><i class="ri-headphone-line"></i><span class="meta-text" data-i18n="position_2">Helpdesk Engineer</span></div>
+                            <div><i class="ri-server-line"></i><span class="meta-text" data-i18n="position_3">IT Operations Support</span></div>
+                        </div>
+                        <p class="hero-summary" data-i18n="hero_summary">Technical Support & Helpdesk Specialist with 4+ years of experience handling enterprise systems, incident management, and SLA-driven operations for national-scale clients.</p>
+                        <div class="hero-cta-group">
+                            <a href="#" class="hero-cta hero-cta--primary nav-link" data-page="contact" data-i18n="hero_cta_contact">Get In Touch</a>
+                            <a href="#" class="hero-cta hero-cta--ghost nav-link" data-page="projects" data-i18n="hero_cta_projects">View Projects</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- QUICK STATS -->
+                <section class="section stats-section">
+                    <div class="stats">
+                        <div class="stat">
+                            <h2 data-target="4">4+</h2>
+                            <p data-i18n="stat_years">Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h2 data-target="10">10+</h2>
+                            <p data-i18n="stat_clients">Enterprise Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h2 data-target="5">5+</h2>
+                            <p data-i18n="stat_products">Products Supported</p>
+                        </div>
+                        <div class="stat">
+                            <h2 data-target="3">3+</h2>
+                            <p data-i18n="stat_projects">Dev Projects</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FEATURED SERVICES -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-service-line"></i>
+                        <span data-i18n="home_services_title">What I Do</span>
+                    </div>
+                    <div class="section-desc" data-i18n="home_services_desc">Core areas of expertise. <a href="#" class="section-link nav-link" data-page="services" data-i18n="home_services_link">See full services →</a></div>
+                    <div class="home-services-grid">
+                        <div class="home-service-item">
+                            <div class="home-service-icon"><i class="ri-customer-service-line"></i></div>
+                            <div class="home-service-body">
+                                <h4 data-i18n="svc_support_title">Technical Support</h4>
+                                <p data-i18n="svc_support_short">Troubleshooting, incident management, and root cause analysis for enterprise applications.</p>
+                            </div>
+                        </div>
+                        <div class="home-service-item">
+                            <div class="home-service-icon"><i class="ri-headphone-line"></i></div>
+                            <div class="home-service-body">
+                                <h4 data-i18n="svc_helpdesk_title">Helpdesk Operations</h4>
+                                <p data-i18n="svc_helpdesk_short">SLA-driven ticket management and technical assistance for end users.</p>
+                            </div>
+                        </div>
+                        <div class="home-service-item">
+                            <div class="home-service-icon"><i class="ri-code-s-slash-line"></i></div>
+                            <div class="home-service-body">
+                                <h4 data-i18n="svc_webdev_title">Web Development</h4>
+                                <p data-i18n="svc_webdev_short">Functional web apps with HTML, CSS, PHP, and MySQL from design to deployment.</p>
+                            </div>
+                        </div>
+                        <div class="home-service-item">
+                            <div class="home-service-icon"><i class="ri-team-line"></i></div>
+                            <div class="home-service-body">
+                                <h4 data-i18n="svc_coord_title">Cross-Team Coordination</h4>
+                                <p data-i18n="svc_coord_short">Bridging developers, account managers, and business teams for smooth delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FEATURED PROJECTS -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-briefcase-line"></i>
+                        <span data-i18n="home_projects_title">Featured Projects</span>
+                    </div>
+                    <div class="section-desc" data-i18n="home_projects_desc">Selected work. <a href="#" class="section-link nav-link" data-page="projects" data-i18n="home_projects_link">View all projects →</a></div>
+                    <div class="home-projects-grid">
+                        <div class="home-project-card card-clickable" data-navigate-project="bookmark-manager">
+                            <div class="home-project-icon"><i class="ri-bookmark-3-line"></i></div>
+                            <div class="home-project-body">
+                                <h4 data-i18n="proj_bookmark_title">Bookmark Manager</h4>
+                                <p data-i18n="proj_bookmark_desc">Privacy-first browser bookmark manager with IndexedDB — folder hierarchy, duplicate detection, domain analytics.</p>
+                                <div class="home-project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            </div>
+                            <i class="ri-arrow-right-up-line home-project-arrow"></i>
+                        </div>
+                        <div class="home-project-card card-clickable" data-navigate-project="insta-analyzer">
+                            <div class="home-project-icon"><i class="ri-instagram-line"></i></div>
+                            <div class="home-project-body">
+                                <h4 data-i18n="proj_insta_title">InstaAnalyzer</h4>
+                                <p data-i18n="proj_insta_desc">Browser-based Instagram data analyzer — processes export files locally with zero server uploads.</p>
+                                <div class="home-project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            </div>
+                            <i class="ri-arrow-right-up-line home-project-arrow"></i>
+                        </div>
+                        <div class="home-project-card card-clickable" data-navigate-project="dss-fogging">
+                            <div class="home-project-icon"><i class="ri-map-pin-2-line"></i></div>
+                            <div class="home-project-body">
+                                <h4 data-i18n="proj_dss_title">DSS — Fogging Area Prioritization</h4>
+                                <p data-i18n="proj_dss_desc">Decision support system for health agencies using TOPSIS method to prioritize fogging areas.</p>
+                                <div class="home-project-tags"><span>PHP</span><span>MySQL</span><span>TOPSIS</span></div>
+                            </div>
+                            <i class="ri-arrow-right-up-line home-project-arrow"></i>
+                        </div>
+                        <div class="home-project-card card-clickable" data-navigate-project="dss-ginger-land">
+                            <div class="home-project-icon"><i class="ri-plant-line"></i></div>
+                            <div class="home-project-body">
+                                <h4 data-i18n="proj_ginger_title">DSS — Ginger Farmland Selection (AHP-TOPSIS)</h4>
+                                <p data-i18n="proj_ginger_desc">Decision support system for selecting optimal ginger farmland in Gunungkidul using combined AHP-TOPSIS methods.</p>
+                                <div class="home-project-tags"><span>PHP</span><span>MySQL</span><span>AHP-TOPSIS</span></div>
+                            </div>
+                            <i class="ri-arrow-right-up-line home-project-arrow"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA STRIP -->
+                <section class="section cta-strip">
+                    <div class="cta-strip__body">
+                        <div class="cta-strip__text">
+                            <h3 data-i18n="cta_strip_title">Ready to work together?</h3>
+                            <p data-i18n="cta_strip_desc">I'm open to new opportunities, collaborations, and interesting projects.</p>
+                        </div>
+                        <div class="cta-strip__actions">
+                            <a href="#" class="cta-btn cta-btn--primary nav-link" data-page="contact" data-i18n="cta_strip_contact">Contact Me</a>
+                            <a href="#" class="cta-btn cta-btn--ghost nav-link" data-page="about" data-i18n="cta_strip_about">Learn More About Me</a>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <!-- PAGE: ABOUT -->
+            <section class="page" id="about">
+
+                <!-- BIO -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-user-line"></i>
+                        <span data-i18n="page_about_title">About Me</span>
+                    </div>
+                    <div class="section-desc" data-i18n="page_about_desc">The person behind the work.</div>
+                    <div class="about-bio-block">
+                        <div class="about-bio-text">
+                            <p data-i18n="about_bio_text">I am an Information Technology professional with a Bachelor's degree in Informatics and experience spanning technical support, helpdesk operations, customer experience, system administration, and web development. My career began in customer service and digital customer support before evolving into technical support and helpdesk roles focused on incident handling, troubleshooting, root-cause analysis, and the implementation of technology solutions for large-scale organizations. With a strong foundation in computer networking, system development, and customer service management, I thrive in dynamic, collaborative, and solution-oriented environments. I have a strong passion for technology, web application development, and user experience improvement, with a commitment to continuous learning, adaptability, and delivering practical solutions that create meaningful value for both users and organizations.</p>
+                        </div>
+                        <div class="about-quick-facts">
+                            <div class="quick-fact">
+                                <i class="ri-map-pin-line"></i>
+                                <div>
+                                    <span class="quick-fact-label" data-i18n="qf_location">Location</span>
+                                    <span class="quick-fact-value" data-i18n="hero_location">South Jakarta, Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="quick-fact">
+                                <i class="ri-briefcase-line"></i>
+                                <div>
+                                    <span class="quick-fact-label" data-i18n="qf_role">Current Role</span>
+                                    <span class="quick-fact-value" data-i18n="about_exp1_role">Technical Support / Helpdesk Specialist</span>
+                                </div>
+                            </div>
+                            <div class="quick-fact">
+                                <i class="ri-building-line"></i>
+                                <div>
+                                    <span class="quick-fact-label" data-i18n="qf_company">Company</span>
+                                    <span class="quick-fact-value">Ivosights</span>
+                                </div>
+                            </div>
+                            <div class="quick-fact">
+                                <i class="ri-graduation-cap-line"></i>
+                                <div>
+                                    <span class="quick-fact-label" data-i18n="qf_education">Education</span>
+                                    <span class="quick-fact-value" data-i18n="about_edu1_degree">Bachelor's — Informatics</span>
+                                </div>
+                            </div>
+                            <div class="quick-fact">
+                                <i class="ri-time-line"></i>
+                                <div>
+                                    <span class="quick-fact-label" data-i18n="qf_experience">Experience</span>
+                                    <span class="quick-fact-value" data-i18n="qf_experience_val">4+ Years in IT Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- WORK EXPERIENCE -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-briefcase-4-line"></i>
+                        <span data-i18n="about_exp_title">Work Experience</span>
+                    </div>
+                    <div class="experience-timeline">
+                        <div class="exp-timeline-item">
+                            <div class="exp-timeline-marker">
+                                <div class="exp-timeline-dot"></div>
+                            </div>
+                            <div class="exp-timeline-body">
+                                <div class="exp-timeline-header">
+                                    <h4 data-i18n="about_exp1_role">Technical Support / Helpdesk Specialist</h4>
+                                    <span class="exp-timeline-period" data-i18n="about_exp1_period">Nov 2022 – Present</span>
+                                </div>
+                                <p class="exp-timeline-company">Ivosights · Jakarta / Hybrid</p>
+                                <p class="exp-timeline-desc" data-i18n="about_exp1_desc">Handling technical troubleshooting, incident management, and client coordination for enterprise products including Sociomile Omni, Sociomile Voice, IVO WABA, and Ripple10.</p>
+                            </div>
+                        </div>
+                        <div class="exp-timeline-item">
+                            <div class="exp-timeline-marker">
+                                <div class="exp-timeline-dot"></div>
+                            </div>
+                            <div class="exp-timeline-body">
+                                <div class="exp-timeline-header">
+                                    <h4 data-i18n="about_exp2_role">Customer Service</h4>
+                                    <span class="exp-timeline-period" data-i18n="about_exp2_period">Oct 2022 – Nov 2022</span>
+                                </div>
+                                <p class="exp-timeline-company">Ivosights BPO (Karier.mu Project)</p>
+                                <p class="exp-timeline-desc" data-i18n="about_exp2_desc">Providing chat-based customer service, handling user inquiries and resolving issues in accordance with service procedures.</p>
+                            </div>
+                        </div>
+                        <div class="exp-timeline-item">
+                            <div class="exp-timeline-marker">
+                                <div class="exp-timeline-dot"></div>
+                            </div>
+                            <div class="exp-timeline-body">
+                                <div class="exp-timeline-header">
+                                    <h4 data-i18n="about_exp3_role">Customer Engagement Champion</h4>
+                                    <span class="exp-timeline-period" data-i18n="about_exp3_period">Oct 2021 – May 2022</span>
+                                </div>
+                                <p class="exp-timeline-company">PT VADS Indonesia (Ajaib Project)</p>
+                                <p class="exp-timeline-desc" data-i18n="about_exp3_desc">Handling customer service via chat platform, assisting users with service issues and providing accurate product information.</p>
+                            </div>
+                        </div>
+                        <div class="exp-timeline-item">
+                            <div class="exp-timeline-marker">
+                                <div class="exp-timeline-dot"></div>
+                            </div>
+                            <div class="exp-timeline-body">
+                                <div class="exp-timeline-header">
+                                    <h4 data-i18n="about_exp4_role">Administration Intern</h4>
+                                    <span class="exp-timeline-period" data-i18n="about_exp4_period">2019</span>
+                                </div>
+                                <p class="exp-timeline-company">PT Yogya Kristal Sejati</p>
+                                <p class="exp-timeline-desc" data-i18n="about_exp4_desc">Developed a warehouse data management system and supported day-to-day administrative and operational activities.</p>
+                            </div>
+                        </div>
+                        <div class="exp-timeline-item">
+                            <div class="exp-timeline-marker">
+                                <div class="exp-timeline-dot"></div>
+                            </div>
+                            <div class="exp-timeline-body">
+                                <div class="exp-timeline-header">
+                                    <h4 data-i18n="about_exp5_role">Server / Waiter</h4>
+                                    <span class="exp-timeline-period" data-i18n="about_exp5_period">2017 – 2018</span>
+                                </div>
+                                <p class="exp-timeline-company">Nagoya Japanese Fusion Resto</p>
+                                <p class="exp-timeline-desc" data-i18n="about_exp5_desc">Delivered quality customer service and supported daily restaurant operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-graduation-cap-line"></i>
+                        <span data-i18n="about_edu_title">Education</span>
+                    </div>
+                    <div class="education-list">
+                        <div class="edu-item">
+                            <div class="edu-icon"><i class="ri-graduation-cap-line"></i></div>
+                            <div class="edu-body">
+                                <h4 data-i18n="about_edu1_degree">Bachelor's Degree — Informatics</h4>
+                                <span class="edu-period" data-i18n="about_edu1_period">2016 – 2021</span>
+                                <p data-i18n="about_edu1_desc">Universitas PGRI Yogyakarta · GPA 3.61 / 4.00 · Final Thesis: "Decision Support System for Fogging Area Determination in Jetis District, Yogyakarta."</p>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-icon"><i class="ri-school-line"></i></div>
+                            <div class="edu-body">
+                                <h4 data-i18n="about_edu2_degree">Computer and Network Engineering</h4>
+                                <span class="edu-period" data-i18n="about_edu2_period">2013 – 2016</span>
+                                <p data-i18n="about_edu2_desc">SMK Tamansiswa Jetis Yogyakarta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SKILLS -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-tools-line"></i>
+                        <span data-i18n="skills_title">Skills & Competencies</span>
+                    </div>
+                    <div class="section-desc" data-i18n="skills_desc">Core competencies and tools I work with professionally.</div>
+                    <div class="techstack-grid">
+                        <div class="tech-group">
+                            <h4 data-i18n="skill_technical">Technical Support & IT Operations</h4>
+                            <div class="tech-pills">
+                                <span>Technical Troubleshooting</span><span>Helpdesk Operations</span><span>Incident Management</span><span>Root Cause Analysis</span><span>System Monitoring</span><span>Remote Support</span><span>SLA Management</span><span>Client Support</span><span>Product Support</span><span>Technical Documentation</span><span>Ticket Management</span><span>User Assistance</span><span>Enterprise Application Support</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h4 data-i18n="skill_webdev">Web Development</h4>
+                            <div class="tech-pills">
+                                <span>PHP Native</span><span>MySQL</span><span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>Responsive Web Design</span><span>CRUD Application</span><span>Database Design</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h4 data-i18n="skill_soft">Soft Skills</h4>
+                            <div class="tech-pills">
+                                <span>Problem Solving</span><span>Analytical Thinking</span><span>Communication</span><span>Customer Orientation</span><span>Team Collaboration</span><span>Knowledge Sharing</span><span>Mentoring</span><span>Adaptability</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h4 data-i18n="skill_tools">Tools</h4>
+                            <div class="tech-pills">
+                                <span>AnyDesk</span><span>TeamViewer</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Microsoft Office</span><span>Google Workspace</span><span>CorelDRAW</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-award-line"></i>
+                        <span data-i18n="page_achievements_title">Certifications & Achievements</span>
+                    </div>
+                    <div class="section-desc" data-i18n="page_achievements_desc">Milestones, certifications, and recognitions.</div>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <i class="ri-graduation-cap-line"></i>
+                            <h3 data-i18n="ach_academic_title">Academic Achievement</h3>
+                            <p data-i18n="ach_academic">Bachelor's Degree in Informatics — Universitas PGRI Yogyakarta · Graduated 2021 · GPA 3.61 / 4.00</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="ri-briefcase-4-line"></i>
+                            <h3 data-i18n="ach_professional_title">Professional Achievement</h3>
+                            <p data-i18n="ach_professional">Handled technical support for national enterprise clients, consistently met SLA standards, and served as part of a 24/7 helpdesk operations team.</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="ri-english-input"></i>
+                            <h3 data-i18n="ach_cert1_title">English Proficiency Test</h3>
+                            <p data-i18n="ach_cert1">Certification of English language proficiency — 2019</p>
+                        </div>
+                        <div class="achievement-card">
+                            <i class="ri-medal-line"></i>
+                            <h3 data-i18n="ach_cert2_title">Digital Business Skills</h3>
+                            <p data-i18n="ach_cert2">Sertifikat Kompetensi Keterampilan Bisnis Digital — 2019</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CAREER MILESTONES -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-flag-line"></i>
+                        <span data-i18n="milestones_title">Career Journey</span>
+                    </div>
+                    <div class="section-desc" data-i18n="milestones_desc">Key moments that shaped my professional journey.</div>
+                    <div class="milestones-list">
+                        <div class="milestone-item">
+                            <div class="milestone-year">2016</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms1_title">Graduated from Vocational High School</h4>
+                                <p data-i18n="ms1_desc">Completed secondary education at SMK Tamansiswa Jetis Yogyakarta, majoring in Computer and Network Engineering.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2017</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms2_title">First Work Experience</h4>
+                                <p data-i18n="ms2_desc">Began first professional experience as a waiter in the F&B industry, developing strong interpersonal and customer service skills.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2018</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms3_title">Joined University Cooperative</h4>
+                                <p data-i18n="ms3_desc">Joined the Student Cooperative of Universitas PGRI Yogyakarta as Administration and Public Relations Staff.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2019</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms4_title">Internship in System Development</h4>
+                                <p data-i18n="ms4_desc">Completed an internship at PT Yogya Kristal Sejati as an Admin and Warehouse Data System Developer.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2021</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms5_title">Completed Bachelor's Degree</h4>
+                                <p data-i18n="ms5_desc">Graduated with a Bachelor's Degree in Informatics from Universitas PGRI Yogyakarta with a GPA of 3.61.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2021</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms6_title">Entered the Digital Support Industry</h4>
+                                <p data-i18n="ms6_desc">Started a professional career in the customer engagement support field for digital platforms.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2022</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms7_title">Joined Ivosights as Technical Support</h4>
+                                <p data-i18n="ms7_desc">Joined Ivosights as a Technical Support specialist, handling troubleshooting, incident management, and client coordination.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2023</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms8_title">Enterprise Product Support</h4>
+                                <p data-i18n="ms8_desc">Handled implementations and support for Sociomile Omni, Sociomile Voice, IVO WABA, and Ripple10 across national enterprise clients.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-item">
+                            <div class="milestone-year">2025</div>
+                            <div class="milestone-dot"></div>
+                            <div class="milestone-body">
+                                <h4 data-i18n="ms9_title">Transitioned to Helpdesk Specialist</h4>
+                                <p data-i18n="ms9_desc">Transitioned to the Customer Experience & Growth division as a Helpdesk Specialist, focusing on SLA compliance and user satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <!-- PAGE: SERVICES -->
+            <section class="page" id="services">
+
+                <!-- SERVICE CARDS -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-service-line"></i>
+                        <span data-i18n="services_title">Services</span>
+                    </div>
+                    <div class="section-desc" data-i18n="services_desc">What I bring to the table — from daily operations to complex technical challenges.</div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="ri-customer-service-line"></i></div>
+                            <h3 data-i18n="svc_support_title">Technical Support</h3>
+                            <p data-i18n="svc_support_desc">Handling technical issues related to applications and systems, performing troubleshooting and root cause analysis to resolve incidents effectively.</p>
+                            <ul class="service-deliverables">
+                                <li data-i18n="svc_support_d1">Incident triage & resolution</li>
+                                <li data-i18n="svc_support_d2">Root cause analysis reports</li>
+                                <li data-i18n="svc_support_d3">Remote & on-site troubleshooting</li>
+                                <li data-i18n="svc_support_d4">System log review & diagnosis</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="ri-headphone-line"></i></div>
+                            <h3 data-i18n="svc_helpdesk_title">Helpdesk Operations</h3>
+                            <p data-i18n="svc_helpdesk_desc">Providing technical assistance to end users, managing tickets and service requests in accordance with SLA standards, and ensuring timely resolution.</p>
+                            <ul class="service-deliverables">
+                                <li data-i18n="svc_helpdesk_d1">SLA-compliant ticket handling</li>
+                                <li data-i18n="svc_helpdesk_d2">End-user technical assistance</li>
+                                <li data-i18n="svc_helpdesk_d3">Service request management</li>
+                                <li data-i18n="svc_helpdesk_d4">24/7 operational support</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
+                            <h3 data-i18n="svc_webdev_title">Web Development</h3>
+                            <p data-i18n="svc_webdev_desc">Building functional web applications using HTML, CSS, PHP, and MySQL — from requirements analysis and system design through to implementation.</p>
+                            <ul class="service-deliverables">
+                                <li data-i18n="svc_webdev_d1">Requirements analysis & planning</li>
+                                <li data-i18n="svc_webdev_d2">Responsive front-end development</li>
+                                <li data-i18n="svc_webdev_d3">PHP & MySQL back-end systems</li>
+                                <li data-i18n="svc_webdev_d4">CRUD & data management apps</li>
+                            </ul>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="ri-team-line"></i></div>
+                            <h3 data-i18n="svc_coord_title">Cross-Team Coordination</h3>
+                            <p data-i18n="svc_coord_desc">Coordinating with developer, account manager, and business teams to ensure smooth service delivery, accurate escalation, and well-documented resolution processes.</p>
+                            <ul class="service-deliverables">
+                                <li data-i18n="svc_coord_d1">Escalation management</li>
+                                <li data-i18n="svc_coord_d2">Cross-functional communication</li>
+                                <li data-i18n="svc_coord_d3">Resolution documentation</li>
+                                <li data-i18n="svc_coord_d4">Client-facing coordination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- WORKFLOW -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-git-branch-line"></i>
+                        <span data-i18n="workflow_title">Workflow</span>
+                    </div>
+                    <div class="section-desc" data-i18n="workflow_desc">My structured approach to handling support requests and technical issues.</div>
+                    <div class="workflow-track">
+                        <div class="workflow-step" data-step="1">
+                            <div class="workflow-icon"><i class="ri-inbox-line"></i></div>
+                            <div class="workflow-content">
+                                <h4 data-i18n="wf_receive">Receive Request</h4>
+                                <p data-i18n="wf_receive_desc">Receiving tickets, reports, or service requests from users through the designated support channel.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step" data-step="2">
+                            <div class="workflow-icon"><i class="ri-search-eye-line"></i></div>
+                            <div class="workflow-content">
+                                <h4 data-i18n="wf_analyze">Analyze</h4>
+                                <p data-i18n="wf_analyze_desc">Conducting an initial investigation and identifying the root cause of the reported issue.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step" data-step="3">
+                            <div class="workflow-icon"><i class="ri-bug-line"></i></div>
+                            <div class="workflow-content">
+                                <h4 data-i18n="wf_troubleshoot">Troubleshoot</h4>
+                                <p data-i18n="wf_troubleshoot_desc">Checking system logs, configurations, and related data to identify and isolate the source of the problem.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step" data-step="4">
+                            <div class="workflow-icon"><i class="ri-tools-line"></i></div>
+                            <div class="workflow-content">
+                                <h4 data-i18n="wf_resolve">Resolve</h4>
+                                <p data-i18n="wf_resolve_desc">Providing a direct solution or performing corrective actions to restore normal service operation.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step" data-step="5">
+                            <div class="workflow-icon"><i class="ri-share-forward-line"></i></div>
+                            <div class="workflow-content">
+                                <h4 data-i18n="wf_escalate">Escalate</h4>
+                                <p data-i18n="wf_escalate_desc">Escalating to the relevant team when the issue requires higher-level expertise or cross-team involvement.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step" data-step="6">
+                            <div class="workflow-icon"><i class="ri-checkbox-circle-line"></i></div>
+                            <div class="workflow-content">
+                                <h4 data-i18n="wf_validate">Validate</h4>
+                                <p data-i18n="wf_validate_desc">Confirming with the user that the solution is working correctly and that the issue has been fully resolved.</p>
+                            </div>
+                        </div>
+                        <div class="workflow-step" data-step="7">
+                            <div class="workflow-icon"><i class="ri-file-text-line"></i></div>
+                            <div class="workflow-content">
+                                <h4 data-i18n="wf_document">Document</h4>
+                                <p data-i18n="wf_document_desc">Recording the resolution details and updating the ticket status to maintain accurate service records.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TECH STACK -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-stack-line"></i>
+                        <span data-i18n="techstack_title">Tech Stack</span>
+                    </div>
+                    <div class="section-desc" data-i18n="techstack_desc">Tools and technologies I use across support, development, and administration.</div>
+                    <div class="techstack-grid">
+                        <div class="tech-group">
+                            <h4 data-i18n="tech_support_tools">Support Tools</h4>
+                            <div class="tech-pills">
+                                <span>AnyDesk</span><span>TeamViewer</span><span>CMS Sociomile</span><span>Sociomile Omni</span><span>Sociomile Voice</span><span>IVO WABA</span><span>Ripple10</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h4 data-i18n="tech_webdev">Web Development</h4>
+                            <div class="tech-pills">
+                                <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span><span>Basic JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h4 data-i18n="tech_productivity">Productivity</h4>
+                            <div class="tech-pills">
+                                <span>Microsoft Office</span><span>Google Workspace</span>
+                            </div>
+                        </div>
+                        <div class="tech-group">
+                            <h4 data-i18n="tech_design">Design</h4>
+                            <div class="tech-pills">
+                                <span>CorelDRAW</span><span>Social Media Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI & AUTOMATION -->
+                <section class="section ai-section">
+                    <div class="section-title">
+                        <i class="ri-sparkling-line"></i>
+                        <span data-i18n="ai_title">AI & Automation</span>
+                    </div>
+                    <div class="section-desc" data-i18n="ai_desc">Exploring intelligent workflows and automation systems.</div>
+                    <div class="ai-content">
+                        <div class="ai-text">
+                            <p data-i18n="ai_body">I actively explore AI-assisted workflows — from prompt engineering and content generation to image enhancement and intelligent automation systems. My goal is to leverage these tools to improve productivity, accelerate creative output, and build smarter digital experiences that feel effortless to use.</p>
+                            <div class="ai-tags">
+                                <span class="ai-tag"><i class="ri-chat-sparkle-line"></i> <span data-i18n="ai_tag1">Prompt Engineering</span></span>
+                                <span class="ai-tag"><i class="ri-image-ai-line"></i> <span data-i18n="ai_tag2">Image Enhancement</span></span>
+                                <span class="ai-tag"><i class="ri-article-line"></i> <span data-i18n="ai_tag3">Content Generation</span></span>
+                                <span class="ai-tag"><i class="ri-robot-2-line"></i> <span data-i18n="ai_tag4">Automation Systems</span></span>
+                                <span class="ai-tag"><i class="ri-flow-chart"></i> <span data-i18n="ai_tag5">Workflow Optimization</span></span>
+                            </div>
+                        </div>
+                        <div class="ai-visual">
+                            <div class="ai-orbit">
+                                <div class="ai-core"><i class="ri-brain-line"></i></div>
+                                <div class="ai-orbit-ring ring-1">
+                                    <span class="orbit-dot" style="--angle:0deg"><i class="ri-openai-fill"></i></span>
+                                    <span class="orbit-dot" style="--angle:120deg"><i class="ri-github-fill"></i></span>
+                                    <span class="orbit-dot" style="--angle:240deg"><i class="ri-vercel-fill"></i></span>
+                                </div>
+                                <div class="ai-orbit-ring ring-2">
+                                    <span class="orbit-dot" style="--angle:60deg"><i class="ri-notion-fill"></i></span>
+                                    <span class="orbit-dot" style="--angle:180deg"><i class="ri-figma-fill"></i></span>
+                                    <span class="orbit-dot" style="--angle:300deg"><i class="ri-google-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <!-- PAGE: PROJECTS -->
+            <section class="page" id="projects">
+
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-briefcase-line"></i>
+                        <span data-i18n="page_projects_title">Web Development Projects</span>
+                    </div>
+                    <div class="section-desc" data-i18n="page_projects_desc">Selected web projects that showcase my development skills.</div>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-img"><i class="ri-bookmark-3-line"></i></div>
+                            <h3 data-i18n="proj_bookmark_title">Bookmark Manager</h3>
+                            <p data-i18n="proj_bookmark_desc">Privacy-first browser bookmark manager with local storage using IndexedDB. Supports folder hierarchy, duplicate detection, and domain analytics.</p>
+                            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>IndexedDB</span></div>
+                            <div class="project-links">
+                                <a href="#" aria-label="View Demo Bookmark Manager"><i class="ri-external-link-line"></i> <span data-i18n="proj_demo">Demo</span></a>
+                            </div>
+                            <div class="project-detail-btn" data-project="bookmark-manager">
+                                <i class="ri-layout-line"></i>
+                                <span data-i18n="proj_view_showcase">View Showcase</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img"><i class="ri-instagram-line"></i></div>
+                            <h3 data-i18n="proj_insta_title">InstaAnalyzer</h3>
+                            <p data-i18n="proj_insta_desc">Browser-based Instagram data analysis app that processes Instagram export files locally without uploading data to any server. Privacy-first architecture.</p>
+                            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links">
+                                <a href="#" aria-label="View Demo InstaAnalyzer"><i class="ri-external-link-line"></i> <span data-i18n="proj_demo">Demo</span></a>
+                            </div>
+                            <div class="project-detail-btn" data-project="insta-analyzer">
+                                <i class="ri-layout-line"></i>
+                                <span data-i18n="proj_view_showcase">View Showcase</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img"><i class="ri-map-pin-2-line"></i></div>
+                            <h3 data-i18n="proj_dss_title">DSS — Fogging Area Prioritization</h3>
+                            <p data-i18n="proj_dss_desc">Decision support system to help health agencies determine priority areas for fogging operations based on health and environmental parameters using the TOPSIS method.</p>
+                            <div class="project-tags"><span>PHP Native</span><span>MySQL</span><span>TOPSIS</span></div>
+                            <div class="project-tags project-tags--meta">
+                                <span data-i18n="proj_dss_meta">Undergraduate Thesis · Universitas PGRI Yogyakarta</span>
+                            </div>
+                            <div class="project-detail-btn" data-project="dss-fogging">
+                                <i class="ri-layout-line"></i>
+                                <span data-i18n="proj_view_showcase">View Showcase</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img"><i class="ri-plant-line"></i></div>
+                            <h3 data-i18n="proj_ginger_title">DSS — Ginger Farmland Selection (AHP-TOPSIS)</h3>
+                            <p data-i18n="proj_ginger_desc">Decision support system for selecting optimal ginger farmland in Gunungkidul using combined AHP-TOPSIS methods.</p>
+                            <div class="project-tags"><span>PHP Native</span><span>MySQL</span><span>AHP</span><span>TOPSIS</span></div>
+                            <div class="project-tags project-tags--meta">
+                                <span data-i18n="proj_ginger_meta">Academic Project · Gunungkidul Region</span>
+                            </div>
+                            <div class="project-detail-btn" data-project="dss-ginger-land">
+                                <i class="ri-layout-line"></i>
+                                <span data-i18n="proj_view_showcase">View Showcase</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT DETAIL VIEWS -->
+                    <div class="project-detail-view" id="detail-bookmark-manager">
+                        <button class="project-detail-back"><i class="ri-arrow-left-line"></i> <span data-i18n="proj_back">Back to Projects</span></button>
+                        <div class="project-detail-header">
+                            <div class="project-detail-icon"><i class="ri-bookmark-3-line"></i></div>
+                            <div>
+                                <h2 data-i18n="proj_bookmark_title">Bookmark Manager</h2>
+                                <p data-i18n="proj_bookmark_detail_desc">A privacy-first browser bookmark manager with local storage using IndexedDB. Features include bookmark import/export, folder hierarchy, duplicate detection, domain analytics, multi-language support, and dark mode — all processed locally with no server uploads.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>IndexedDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-detail-gallery">
+                            <div class="project-gallery-item project-gallery-main">
+                                <div class="project-gallery-placeholder">
+                                    <img src="Bookmarks-Manager_1.png" alt="Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="Bookmarks-Manager_2.png" alt="Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="Bookmarks-Manager_3.png" alt="Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-detail-links">
+                            <a href="https://devasmaradev.github.io/Bookmarks-Manager/" target="_blank" class="project-detail-cta"><i class="ri-external-link-line"></i> <span data-i18n="proj_live_demo">Live Demo</span></a>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-view" id="detail-insta-analyzer">
+                        <button class="project-detail-back"><i class="ri-arrow-left-line"></i> <span data-i18n="proj_back">Back to Projects</span></button>
+                        <div class="project-detail-header">
+                            <div class="project-detail-icon"><i class="ri-instagram-line"></i></div>
+                            <div>
+                                <h2 data-i18n="proj_insta_title">InstaAnalyzer</h2>
+                                <p data-i18n="proj_insta_detail_desc">Browser-based Instagram data analysis app that processes Instagram export ZIP files entirely on the client side. Features followers analysis, following analysis, fan detection, and local-only processing with zero server uploads — built with a privacy-first architecture.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>ZIP Processing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-detail-gallery">
+                            <div class="project-gallery-item project-gallery-main">
+                                <div class="project-gallery-placeholder">
+                                    <img src="InstaAnalyzer_1.png" alt="Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="InstaAnalyzer_2.png" alt="Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="InstaAnalyzer_3.png" alt="Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-detail-links">
+                            <a href="https://devasmaradev.github.io/InstaAnalyzer/" target="_blank" class="project-detail-cta"><i class="ri-external-link-line"></i> <span data-i18n="proj_live_demo">Live Demo</span></a>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-view" id="detail-dss-fogging">
+                        <button class="project-detail-back"><i class="ri-arrow-left-line"></i> <span data-i18n="proj_back">Back to Projects</span></button>
+                        <div class="project-detail-header">
+                            <div class="project-detail-icon"><i class="ri-map-pin-2-line"></i></div>
+                            <div>
+                                <h2 data-i18n="proj_dss_title">DSS — Fogging Area Prioritization</h2>
+                                <p data-i18n="proj_dss_detail_desc">Decision support system to help health agencies determine priority areas for fogging operations based on health and environmental parameters using the TOPSIS method.</p>
+                                <div class="project-tags">
+                                    <span>PHP Native</span><span>MySQL</span><span>TOPSIS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-detail-gallery">
+                            <div class="project-gallery-item project-gallery-main">
+                                <div class="project-gallery-placeholder">
+                                    <img src="spk-fogging_1.png" alt="DSS Overview">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="spk-fogging_2.png" alt="TOPSIS Calculation">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="spk-fogging_3.png" alt="Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-view" id="detail-dss-ginger-land">
+                        <button class="project-detail-back"><i class="ri-arrow-left-line"></i> <span data-i18n="proj_back">Back to Projects</span></button>
+                        <div class="project-detail-header">
+                            <div class="project-detail-icon"><i class="ri-plant-line"></i></div>
+                            <div>
+                                <h2 data-i18n="proj_ginger_title">DSS — Ginger Farmland Selection (AHP-TOPSIS)</h2>
+                                <p data-i18n="proj_ginger_detail_desc">Decision support system developed to help agricultural stakeholders in Gunungkidul Regency select the most suitable land for ginger cultivation. The system combines the Analytical Hierarchy Process (AHP) for criteria weighting with TOPSIS for ranking and selecting the optimal land alternatives based on soil quality, land area, accessibility, water availability, and other agricultural criteria.</p>
+                                <div class="project-tags">
+                                    <span>PHP Native</span><span>MySQL</span><span>AHP</span><span>TOPSIS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-detail-gallery">
+                            <div class="project-gallery-item project-gallery-main">
+                                <div class="project-gallery-placeholder">
+                                    <img src="spk-jahe_1.png" alt="DSS Overview">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="spk-jahe_2.png" alt="AHP Weighting">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-gallery-item">
+                                <div class="project-gallery-placeholder">
+                                    <img src="spk-jahe_3.png" alt="TOPSIS Result Report">
+                                    <div class="project-gallery-zoom"><i class="ri-zoom-in-line"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- PROFESSIONAL PROJECTS -->
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-customer-service-line"></i>
+                        <span data-i18n="page_prof_projects_title">Professional Projects</span>
+                    </div>
+                    <div class="section-desc" data-i18n="page_prof_projects_desc">Key projects and responsibilities from my professional career.</div>
+                    <div class="projects-grid projects-grid--top">
+                        <div class="project-card">
+                            <div class="project-img"><i class="ri-store-2-line"></i></div>
+                            <h3 data-i18n="prof_warehouse_title">Warehouse Administration System</h3>
+                            <p data-i18n="prof_warehouse_desc">Warehouse data recording system built during internship at PT Yogya Kristal Sejati to support inventory management and data administration.</p>
+                            <div class="project-tags"><span>PHP</span><span>MySQL</span><span>CRUD</span></div>
+                            <div class="project-tags project-tags--meta"><span data-i18n="prof_warehouse_meta">Internship · PT Yogya Kristal Sejati</span></div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img"><i class="ri-government-line"></i></div>
+                            <h3 data-i18n="prof_proj2_title">DSS — Village Cash Assistance Recipients</h3>
+                            <p data-i18n="prof_proj2_desc">Decision support system to help village governments determine eligible recipients for direct cash assistance (BLT) based on established criteria using the TOPSIS method.</p>
+                            <div class="project-tags"><span>PHP Native</span><span>MySQL</span><span>TOPSIS</span></div>
+                            <div class="project-tags project-tags--meta"><span data-i18n="prof_proj2_meta">Academic Project</span></div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img"><i class="ri-plant-line"></i></div>
+                            <h3 data-i18n="prof_proj3_title">Expert System — Oyster Mushroom Diagnosis</h3>
+                            <p data-i18n="prof_proj3_desc">Expert system to help users identify pests and diseases in oyster mushroom cultivation and provide handling recommendations.</p>
+                            <div class="project-tags"><span>Frontend Development</span><span>UI/UX</span></div>
+                            <div class="project-tags project-tags--meta"><span data-i18n="prof_proj3_meta">Contribution: UI & Frontend Development</span></div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <!-- PAGE: CONTACT -->
+            <section class="page" id="contact">
+                <section class="section">
+                    <div class="section-title">
+                        <i class="ri-mail-line"></i>
+                        <span data-i18n="page_contact_title">Contact</span>
+                    </div>
+                    <div class="section-desc" data-i18n="page_contact_desc">Let's build something amazing together.</div>
+                    <div class="contact-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form_name">Full Name</label>
+                                <input type="text" id="name" name="name" data-i18n-placeholder="form_name_placeholder" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="form_email">Email Address</label>
+                                <input type="email" id="email" name="email" data-i18n-placeholder="form_email_placeholder" placeholder="hello@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="form_message">Message</label>
+                                <textarea id="message" name="message" rows="5" data-i18n-placeholder="form_message_placeholder" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn" data-i18n="form_send">Send Message</button>
+                            <div id="form-status"></div>
+                        </form>
+                        <div class="contact-info">
+                            <div class="info-item"><i class="ri-mail-line"></i><span>rony.asmara@outlook.com</span></div>
+                            <div class="info-item"><i class="ri-map-pin-line"></i><span data-i18n="contact_address">South Jakarta, Indonesia</span></div>
+                            <div class="social-links">
+                                <a href="#" aria-label="GitHub"><i class="ri-github-line"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+        </main>
+    </div>
+
+    <div class="project-lightbox" id="projectLightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox" aria-hidden="true">
+        <button class="project-lightbox-close" aria-label="Close lightbox">
+            <i class="ri-close-line"></i>
+        </button>
+        <img id="projectLightboxImage" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
