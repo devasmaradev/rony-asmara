@@ -974,7 +974,7 @@ function initContactForm() {
         };
 
         try {
-            const response = await fetch("https://formspree.io/f/xwvjzblg", {
+            const response = await fetch("https://formspree.io/f/mbdebkje", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
